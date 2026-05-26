@@ -62,7 +62,7 @@ def tombol_diagnosa():
 root = tk.Tk()
 root.title("Sistem Pakar Diagnosa Penyakit")
 root.geometry("400x530")
-root.configure(bg="#f8fafc")  # Mengatur warna background window utama menjadi Slate 50
+root.configure(bg="#f8fafc")
 
 # 5. HEADER BANNER PREMIUM
 header_frame = tk.Frame(root, bg="#4f46e5")
@@ -87,10 +87,10 @@ entry_nama = tk.Entry(
     fg="#1e293b", 
     relief="flat", 
     highlightthickness=1, 
-    highlightbackground="#cbd5e1", # Warna border normal (Slate 300)
-    highlightcolor="#4f46e5"         # Warna border ketika sedang diklik/aktif (Indigo 600)
+    highlightbackground="#cbd5e1",
+    highlightcolor="#4f46e5"
 )
-entry_nama.pack(fill="x", padx=25, pady=(0, 15), ipady=4) # ipady=4 memberikan ruang/tinggi dalam input
+entry_nama.pack(fill="x", padx=25, pady=(0, 15), ipady=4)
 
 # 7. WIDGET DAFTAR PILIHAN GEJALA
 label_pilih = tk.Label(root, text="Pilih Gejala yang Dirasakan:", font=("Segoe UI", 10, "bold"), bg="#f8fafc", fg="#475569")
@@ -110,7 +110,7 @@ for gejala in daftar_gejala:
         activebackground="#f8fafc", 
         fg="#334155", 
         activeforeground="#4f46e5",
-        selectcolor="#ffffff" # Kotak checkbox berwarna putih bersih
+        selectcolor="#ffffff"
     )
     chk.pack(anchor="w", padx=35, pady=2)
     variabel_gejala[gejala] = var
@@ -126,7 +126,7 @@ btn_diagnosa = tk.Button(
     activebackground="#4338ca", 
     activeforeground="#ffffff", 
     bd=0, 
-    cursor="hand2", # Mengubah bentuk kursor menjadi tangan ketika diarahkan ke tombol
+    cursor="hand2", 
     relief="flat"
 )
 btn_diagnosa.pack(fill="x", padx=25, pady=15, ipady=6)
