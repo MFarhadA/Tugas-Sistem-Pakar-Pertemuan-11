@@ -56,7 +56,7 @@ def tombol_diagnosa():
         for penyakit in hasil_diagnosa:
             output_text.insert(tk.END, f"  %+2s {penyakit.upper()}\n" % "🩺")
     else:
-        output_text.insert(tk.END, "  ℹ️ Tidak ditemukan diagnosis berdasarkan gejala saat ini.\n")
+        output_text.insert(tk.END, "  Tidak ditemukan diagnosis berdasarkan gejala saat ini.\n")
 
 # 4. --- SETUP JENDELA UTAMA (GUI WINDOW CREATION) ---
 root = tk.Tk()
